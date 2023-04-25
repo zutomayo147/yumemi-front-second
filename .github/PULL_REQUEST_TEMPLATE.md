@@ -1,12 +1,3 @@
----
-name: 'Pull request '
-about: Good practice for pull request
-title: ''
-labels: enhancement
-assignees: zutomayo147
-
----
-
 # 概要
 <!-- 変更の目的 もしくは 関連する Issue 番号 -->
 
