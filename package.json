@@ -6,7 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "yarn lint --fix",
+    "format:check": "prettier --check --ignore-path .gitignore './**/*.{ts,tsx,css}'",
+    "format:fix": "prettier --write --ignore-path .gitignore './**/*.{ts,tsx,css}'",
+    "cypress": "cypress open",
+    "cypress:headless": "npx cypress run --browser=chrome --headless",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
     "@types/node": "18.16.0",
