@@ -5,6 +5,7 @@ import prefListLogic from './prefListLogic';
 import usePrefectures from './usePrefectures';
 
 import Checkbox from '@/components/Checkbox';
+import PopulationRadioButton from '@/features/typeRadioButton/PopulationRadioButton';
 import { checkedPrefAtom } from '@/stores/atoms';
 
 const PrefList = () => {
@@ -37,6 +38,9 @@ const PrefList = () => {
           </p>
         </div>
       )}
+      <div className='pref-list__annotation__container'>
+        <PopulationRadioButton />
+      </div>
     </>
   );
 };
