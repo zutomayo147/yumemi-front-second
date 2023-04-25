@@ -11,3 +11,54 @@
   color: #eee;
   font-size: clamp(10px, 5vw, 40px);
 }
+
+.pref-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(80px, 150px));
+  gap: 10px 80px;
+  justify-content: center;
+}
+
+.pref-list__loading {
+  display: flex;
+  justify-content: center;
+  height: 45vh;
+}
+
+.pref-list__checkbox {
+  position: relative;
+  padding-left: 28px;
+  font-size: clamp(1rem, 2vw, 20px);
+  cursor: pointer;
+  user-select: none;
+  &:hover,
+  &:focus {
+    background-color: #bfbfbf;
+    transform: scale(1.05);
+  }
+}
+
+.pref-list__annotation__container {
+  display: flex;
+  justify-content: center;
+}
+
+.pref-list__annotation {
+  font-size: clamp(1rem, 2vw, 24px);
+  font-weight: bold;
+  color: #555555;
+  user-select: none;
+}
+
+@media screen and (max-width: 800px) {
+  .pref-list {
+    gap: 5px;
+    grid-template-columns: repeat(3, minmax(80px, 150px));
+  }
+  .recharts-default-legend li {
+    font-size: clamp(10px, 5vw, 12px);
+  }
+  .recharts-cartesian-axis-ticks {
+    font-size: clamp(10px, 5vw, 12px);
+  }
+}
