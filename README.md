@@ -42,6 +42,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 - Nextjs13のappディレクトリ機能ははまだ正式版が出ていないため採用しなかった
 
+- huskyを用いるのでGithubCIは採用しなかった
+
 ## Getting Started
 
 .env.sampleを.envにリネームし、発行したRESAS_API_KEYに差し替
