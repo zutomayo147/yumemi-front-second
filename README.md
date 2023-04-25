@@ -69,11 +69,12 @@ npx cypress install # 初回だけ
 yarn cypresse:headeless # e2eテストの実行
 # or
 yarn cypresse
+```
 
 
-### 動作環境
+## 動作環境
 
-# - Nodejs(v19.8.1 or v18.12.1 or v16.18.1)とyarnが必要
+### - Nodejs(v19.8.1 or v18.12.1 or v16.18.1)とyarnが必要
 - Nodejsのバージョンはnvmで適切に変更すること
 
 ## Deploy on Vercel
