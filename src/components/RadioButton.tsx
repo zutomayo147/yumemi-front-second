@@ -1,4 +1,4 @@
-import React from 'react';
+import { ChangeEvent, FC } from 'react';
 
 import { PopulationType } from '@/common/populationType';
 
@@ -7,10 +7,10 @@ type RadioButtonProps = {
   value: PopulationType;
   label: string;
   checked: boolean;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
 };
 
-const RadioButton: React.FC<RadioButtonProps> = ({
+const RadioButton: FC<RadioButtonProps> = ({
   name,
   value,
   label,

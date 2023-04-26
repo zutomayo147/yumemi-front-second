@@ -1,6 +1,5 @@
 import { useCallback } from 'react';
 
-import { produce } from 'immer';
 import { useRecoilState, useSetRecoilState, useRecoilValue } from 'recoil';
 
 import { fetchPopulationByPrefCode } from './fetchPopulationByPrefCode';
@@ -41,15 +40,13 @@ const PrefListLogic = () => {
         prefecture => String(prefecture.prefCode) === prefCode,
       );
 
-      setCheckedPrefs(
-        produce(draft => {
-          if (isChecked) {
-            draft.splice(draft.indexOf(prefCode), 1);
-          } else {
-            draft.push(prefCode);
-          }
-        }),
-      );
+      setCheckedPrefs(prevPrefs => {
+        if (isChecked) {
+          return prevPrefs.filter(p => p !== prefCode);
+        } else {
+          return [...prevPrefs, prefCode];
+        }
+      });
 
       const handlePopulationData = async (
         prefName: string,
@@ -76,6 +73,7 @@ const PrefListLogic = () => {
           );
         }
       };
+
       handlePopulationData(targetPrefecture?.prefName!, prefCode);
     },
     [

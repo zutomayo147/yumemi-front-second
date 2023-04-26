@@ -71,5 +71,6 @@ module.exports = {
     '**/node_modules/*',
     '.eslintrc.js',
     '.prettierrc.js',
+    'cypress.config.ts',
   ],
 };
