@@ -47,6 +47,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 - huskyを用いるのでGithubCIは採用しなかった
 
+- グラフの凡例はフレームワークでは右に位置しているがグラフの
+  下側の方が多くの都道府県を選択した時にスクロールを行わくて
+  済むほうが良いと考えた
+
 ## Getting Started
 
 .env.sampleを.envにリネームし、発行したRESAS_API_KEYに差し替
