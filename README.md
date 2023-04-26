@@ -86,7 +86,9 @@ yarn cypresse
 
 - e2eテストの様子
 
-https://user-images.githubusercontent.com/42014197/234458561-e2fa800d-3e59-4384-8e59-443a0e68fecf.mp4
+
+https://user-images.githubusercontent.com/42014197/234537692-6a530afc-4c5f-4295-93e7-e9a40fdef4eb.mp4
+
 
 ## 動作環境
 
