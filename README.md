@@ -61,6 +61,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 For e2e test by cypress
 
+テストのためにブラウザが必要なのでgoogle-chromeをインストールしておくこと
+
 ```bash
 yarn dev # ローカルサーバーの起動
 
