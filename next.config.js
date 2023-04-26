@@ -5,7 +5,7 @@ const ContentSecurityPolicy = `
   base-uri 'self';
   object-src 'none';
   frame-ancestors 'none';
-  prefetch-src 'self'"
+  prefetch-src 'self';
   form-action 'self';
 `;
 const securityHeaders = [
