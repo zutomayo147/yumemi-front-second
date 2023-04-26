@@ -35,12 +35,13 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "next.config.js"
   ],
   "exclude": [
     "node_modules",
     ".next",
     "husky",
-    "cypress.config.ts",
+    "cypress.config.ts"
   ]
 }

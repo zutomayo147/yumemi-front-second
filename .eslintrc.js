@@ -71,7 +71,5 @@ module.exports = {
     '**/node_modules/*',
     '.eslintrc.js',
     '.prettierrc.js',
-    'cypress/',
-    '__tests__/',
   ],
 };
