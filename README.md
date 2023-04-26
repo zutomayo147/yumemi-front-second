@@ -73,6 +73,13 @@ yarn cypresse:headeless # e2eテストの実行
 yarn cypresse
 ```
 
+- e2eテストの様子
+
+
+
+https://user-images.githubusercontent.com/42014197/234458561-e2fa800d-3e59-4384-8e59-443a0e68fecf.mp4
+
+
 
 ## 動作環境
 
