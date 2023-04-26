@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
+const ContentSecurityPolicy = `
+  font-src 'self';
+  manifest-src 'self';
+  base-uri 'self';
+  object-src 'none';
+  frame-ancestors 'none';
+  prefetch-src 'self'"
+  form-action 'self';
+`;
 const securityHeaders = [
   {
     key: 'X-DNS-Prefetch-Control',
@@ -20,6 +29,10 @@ const securityHeaders = [
     key: 'X-Frame-Options',
     value: 'SAMEORIGIN',
   },
+  {
+    key: 'Content-Security-Policy',
+    value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim(),
+  },
 ];
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -30,7 +43,7 @@ module.exports = withBundleAnalyzer({
   async headers() {
     return [
       {
-        source: '/:path*',
+        source: '/(.*)',
         headers: securityHeaders,
       },
     ];
