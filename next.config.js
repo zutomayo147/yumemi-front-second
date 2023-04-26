@@ -5,8 +5,7 @@ const ContentSecurityPolicy = `
   base-uri 'self';
   object-src 'none';
   frame-ancestors 'none';
-  prefetch-src 'self';
-  form-action 'self';
+  form-action https://opendata.resas-portal.go.jp http://localhost:3000;
 `;
 const securityHeaders = [
   {
