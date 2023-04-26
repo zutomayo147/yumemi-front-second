@@ -22,7 +22,12 @@ function App({ Component, pageProps }: AppProps) {
         <meta property='og:type' content='website' />
         <meta property='og:url' content={url} />
         <meta property='og:image' content={`${siteUrl}/YUMEMI.svg`} />
-        <link rel='icon' type='image/svg+xml' sizes='16x16' href='YUMEMI.svg' />
+        <link
+          rel='icon'
+          type='image/svg+xml'
+          sizes='16x16'
+          href={`${siteUrl}/YUMEMI.svg`}
+        />
       </Head>
       <RecoilRoot>
         <Component {...pageProps} />
