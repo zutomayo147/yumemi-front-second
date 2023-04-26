@@ -19,11 +19,9 @@
   justify-content: center;
 }
 
-.pref-list__title__container {
+.pref-list__title {
   display: flex;
   justify-content: center;
-}
-.pref-list__title {
   font-size: clamp(1rem, 2vw, 24px);
   font-weight: bold;
   color: #555555;
@@ -57,16 +55,19 @@
   }
 }
 
-.pref-list__annotation__container {
+.pref-list__annotation {
   display: flex;
   justify-content: center;
-}
-
-.pref-list__annotation {
-  font-size: clamp(1rem, 2vw, 24px);
+  font-size: clamp(16px, 2vw, 24px);
   font-weight: bold;
   color: #555555;
   user-select: none;
+}
+
+.radioBox__list {
+  display: flex;
+  justify-content: center;
+  font-size: clamp(12px, 2vw, 16px);
 }
 
 .graph__container {

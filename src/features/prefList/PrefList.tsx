@@ -24,9 +24,7 @@ const PrefList = () => {
 
   return (
     <>
-      <div className='pref-list__title__container'>
-        <p className='pref-list__title'>都道府県</p>
-      </div>
+      <p className='pref-list__title'>都道府県</p>
       <ul className='pref-list'>
         {prefectures.map(prefecture => (
           <li key={prefecture.prefCode}>
@@ -35,13 +33,11 @@ const PrefList = () => {
         ))}
       </ul>
       {checkedPrefs.length === 0 && (
-        <div className='pref-list__annotation__container'>
-          <p className='pref-list__annotation'>
-            一つ以上の都道府県を選択してください
-          </p>
-        </div>
+        <p className='pref-list__annotation'>
+          一つ以上の都道府県を選択してください
+        </p>
       )}
-      <div className='pref-list__annotation__container'>
+      <div className='radioBox__list'>
         <PopulationRadioButton />
       </div>
     </>
