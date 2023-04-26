@@ -35,6 +35,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 - 1月から可読性が上がるようにreactのコードを見つめ直した
 
+### 着手にあたり参考にしたページや書籍、リポジトリがあれば
+特になし
+
 ### 本課題の開発中の所感
 
 - 素のcssだけで記述を行うと指示があるためcss-in-jsを用いずに
