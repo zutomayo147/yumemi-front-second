@@ -6,6 +6,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ### 課題の取り組み開始から完了までに要した合計時間
 
+- 14時間
+
 ### これまでの総合的なプログラミング歴
 
 - 大学入学以前にPythonとLinuxに少し触れた
@@ -51,6 +53,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
   下側の方が多くの都道府県を選択した時にスクロールを行わくて
   済むほうが良いと考えた
 
+- PrefectureCode.ts内のコメントは必要なコメント(コメントアウトするとapiリクエストがエラーを起こす req変数の記述がマストなnextjsの仕様?)
+
 ## Getting Started
 
 .env.sampleを.envにリネームし、発行したRESAS_API_KEYに差し替
@@ -82,11 +86,7 @@ yarn cypresse
 
 - e2eテストの様子
 
-
-
 https://user-images.githubusercontent.com/42014197/234458561-e2fa800d-3e59-4384-8e59-443a0e68fecf.mp4
-
-
 
 ## 動作環境
 
