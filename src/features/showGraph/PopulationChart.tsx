@@ -58,26 +58,25 @@ const PopulationChart = () => {
   return (
     <>
       <div className='graph__container'>
-        <ResponsiveContainer width='100%' height='100%'>
+        <ResponsiveContainer>
           <LineChart
             data={populationData}
-            margin={{ top: 50, right: 10, bottom: 5, left: 35 }}
+            margin={{ top: 50, right: 20, bottom: 0, left: 35 }}
           >
             <XAxis
               dataKey='year'
-              label={{ value: '年度', offset: 20, position: 'right' }}
+              label={{
+                value: '年度',
+                offset: -10,
+                position: 'insideBottomRight',
+              }}
             />
             <YAxis
               tickFormatter={value => value.toLocaleString()}
               label={{ value: '人口数', position: 'top', offset: 20 }}
             />
             <CartesianGrid strokeDasharray='3 3' />
-            <Legend
-              verticalAlign='top'
-              align='right'
-              layout='vertical'
-              width={125}
-            />
+            <Legend />
             {checkedPrefs.map(prefCode => {
               const pCode = parseInt(prefCode, 10);
               const pref: Prefecture = prefectures[pCode - 1]!;
