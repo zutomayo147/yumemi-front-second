@@ -34,6 +34,7 @@ describe('halfCheckboxesCount', () => {
         'not.be.checked',
       );
       cy.get('.recharts-default-legend li').should('have.length', 0);
+      cy.screenshot();
     });
   });
 });
