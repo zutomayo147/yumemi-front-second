@@ -19,6 +19,17 @@
   justify-content: center;
 }
 
+.pref-list__title__container {
+  display: flex;
+  justify-content: center;
+}
+.pref-list__title {
+  font-size: clamp(1rem, 2vw, 24px);
+  font-weight: bold;
+  color: #555555;
+  user-select: none;
+}
+
 .pref-list__loading {
   display: flex;
   justify-content: center;

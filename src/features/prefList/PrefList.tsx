@@ -24,6 +24,9 @@ const PrefList = () => {
 
   return (
     <>
+      <div className='pref-list__title__container'>
+        <p className='pref-list__title'>都道府県</p>
+      </div>
       <ul className='pref-list'>
         {prefectures.map(prefecture => (
           <li key={prefecture.prefCode}>
