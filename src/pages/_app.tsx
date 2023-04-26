@@ -8,8 +8,8 @@ import '@/styles/index.css';
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  const siteUrl = `${process.env.NEXT_PUBLIC_DEFAULT_SITE_URL}`;
-  const Url = `${siteUrl}${router.asPath}`;
+  const siteUrl = process.env.NEXT_PUBLIC_VERCEL_URL || '';
+  const url = `${siteUrl}${router.asPath}`;
   return (
     <>
       <Head>
@@ -20,8 +20,8 @@ function App({ Component, pageProps }: AppProps) {
         <meta name='author' content='yamashita' />
         <meta property='og:title' content='ゆめみフロントエンド試験' />
         <meta property='og:type' content='website' />
-        <meta property='og:url' content={Url} />
-        <meta property='og:image' content='YUMEMI.svg' />
+        <meta property='og:url' content={url} />
+        <meta property='og:image' content={`${siteUrl}/YUMEMI.svg`} />
         <link rel='icon' type='image/svg+xml' sizes='16x16' href='YUMEMI.svg' />
       </Head>
       <RecoilRoot>
