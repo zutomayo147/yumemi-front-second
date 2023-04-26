@@ -27,6 +27,11 @@ module.exports = {
     'react-hooks/exhaustive-deps': ['warn'],
     'zod/prefer-enum': 2,
     'zod/require-strict': 2,
+    'no-console': ['error', { allow: ['error'] }],
+    'no-warning-comments': [
+      'warn',
+      { terms: ['todo', 'fixme'], location: 'anywhere' },
+    ],
     'import/order': [
       'error',
       {
