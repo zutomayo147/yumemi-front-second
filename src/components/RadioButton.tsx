@@ -1,4 +1,3 @@
-// import React from 'react';
 import { ChangeEvent, FC } from 'react';
 
 import { PopulationType } from '@/common/populationType';

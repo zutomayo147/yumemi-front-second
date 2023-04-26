@@ -1,4 +1,4 @@
-export const COLOR_CODE: any = {
+export const COLOR_CODE: Record<number, string> = {
   1: '#CC9900',
   2: '#CCCC00',
   3: '#CCFF00',

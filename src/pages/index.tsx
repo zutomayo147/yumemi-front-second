@@ -5,7 +5,7 @@ import PrefList from '@/features/prefList/PrefList';
 const PopulationChart = dynamic(
   () => import('@/features/showGraph/PopulationChart'),
   {
-    ssr: false, // サーバーサイドレンダリングを無効にする
+    ssr: false,
   },
 );
 
